@@ -6,7 +6,7 @@ import dotenv from "dotenv";
 dotenv.config();
 
 // This function connects to MongoDB
-// This function needs to be async because it contacts to external services
+// This function needs to be async because it runs external processes
 // We need try-catch block to handle errors
 export const connectDB = async () => {
   try {
