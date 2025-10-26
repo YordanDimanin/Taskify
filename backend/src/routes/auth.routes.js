@@ -5,14 +5,15 @@ import dotenv from "dotenv";
 dotenv.config();
 
 // importing controllers
-import { login, signUp } from "../controllers/auth.controller.js";
+import { login, signup, logout } from "../controllers/auth.controller.js";
 
 // creating router
 const router = express.Router();
 
 // routes
-router.post("/signup" ,signUp);
+router.post("/signup" ,signup);
 router.post("/login" ,login);
+router.post("/logout" ,logout);
 
 // exporting router
 export default router;
